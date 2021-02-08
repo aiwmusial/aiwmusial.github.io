@@ -17,23 +17,23 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-md navbar-secondary bg-white fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fab fa-fly text-dark fa-2x"></i></a>
+          <a class="navbar-brand" href="#home"><i class="fab fa-fly text-dark fa-2x"></i></a>
           <button class="navbar-toggler bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> --><i class="fas fa-align-center"></i></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-dark text-uppercase fw-bolder px-3" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-dark text-uppercase fw-bolder px-3" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark text-uppercase fw-bolder px-3" href="#">About me</a>
+                <a class="nav-link text-dark text-uppercase fw-bolder px-3" href="#aboutMe">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark text-uppercase fw-bolder px-3" href="#">Skills</a>
+                <a class="nav-link text-dark text-uppercase fw-bolder px-3" href="#skills">Skills</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-dark text-uppercase fw-bolder px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-dark text-uppercase fw-bolder px-3" href="#projects" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Projects
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,18 +43,18 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark text-uppercase fw-bolder px-3" href="#">Contact</a>
+                <a class="nav-link text-dark text-uppercase fw-bolder px-3" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- Home Page -->
-      <section>
+      <section id="home">
         <div class="container-fluid" style="margin-top: 100px; height: 100vh;">
           <div class="row bg-white ">
             <div class="col text-end">
-              <img src="./images/brain-2750415_1280.png" alt="head full of questions"  style="height: 65vh; margin-right: 10%;">
+              <img src="./images/brain-2750415_1280.png" alt="brain"  style="height: 65vh; margin-right: 10%;">
             </div>
           </div>
           <div class="row bg-white">
@@ -66,7 +66,7 @@
         </div>
       </section>
       <!-- About Me -->
-      <section>
+      <section id="aboutMe">
         <div class="container-fluid bg-dark">
           <div class="row">
             <div class="col-lg-6 order-lg-last text-light fa-10x d-flex align-items-center d-flex justify-content-center"  style="height: 100vh;">
@@ -85,31 +85,59 @@
         </div>
       </section>
       <!-- Skills -->
-      <section>
-        <div class="container-fluid bg-white">
-          <div class="row">
-            <div class="col">
-            <img src="./images/html5-logo-png-transparent.png" alt="HTML logo" style="height: 50px;">
+      <section id="skills">
+        <div class="container-fluid bg-white mt-5 pt-5">
+            <div class="row mb-5">
+              <div class="col text-center">
+                <h1 class="display-1">Skills</h1>
+                <p class="lead text-secondary">Below are presented some of the technologies I use</p>
+              </div>
             </div>
-            <div class="col">
-              <img src="./images/css3-logo-png-transparent.png" alt="CSS logo" style="height: 50px;">
+          <div class="row mb-5">
+            <div class="col-lg-4 mb-5 d-flex align-items-center d-flex justify-content-center">
+            <img src="./images/html5-logo-png-transparent.png" alt="HTML logo" style="height: 150px;">
             </div>
-            <div class="col">
-              <img src="./images/javascript-logo-png-transparent.png" alt="JavaScript logo" style="height: 50px;">
+            <div class="col-lg-4 mb-5 d-flex align-items-center d-flex justify-content-center">
+              <img src="./images/css3-logo-png-transparent.png" alt="CSS logo" style="height: 150px;">
+            </div>
+            <div class="col-lg-4 mb-5 d-flex align-items-center d-flex justify-content-center">
+              <img src="./images/javascript-logo-png-transparent.png" alt="JavaScript logo" style="height: 150px;">
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <img src="./images/bootstrap-img.png" alt="bootstrap logo" style="height: 50px;">
+          <div class="row mb-5">
+            <div class="col-lg-4 mb-5 d-flex align-items-center d-flex justify-content-center">
+              <img src="./images/bootstrap-img.png" alt="bootstrap logo" style="height: 150px;">
             </div>
-            <div class="col">
-              <img src="./images/GitHub-Mark-64px.png" alt="GitHub logo" style="height: 50px;">
+            <div class="col-lg-4 mb-5 d-flex align-items-center d-flex justify-content-center">
+              <img src="./images/GitHub-Mark-120px-plus.png" alt="GitHub logo" style="height: 150px;">
             </div>
-            <div class="col">
-              <img src="./images/figma-1-logo-png-transparent.png" alt="Figma logo" style="height: 50px;">
+            <div class="col-lg-4 mb-5 d-flex align-items-center d-flex justify-content-center">
+              <img src="./images/figma-1-logo-png-transparent.png" alt="Figma logo" style="height: 150px;">
             </div>
           </div>
         </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects">
+
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container-fluid bg-secondary text-light">
+          <div class="row">
+            <div class="col font-monospace fw-bolder">
+              <h1 class="fw-bolder lh-1" style="font-size: 19vw">reach out </h1>
+              <h1 class="fw-bolder lh-1" style="font-size: 19vw">to me...</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h6 class="fw-normal">e-mail me at:</h6>
+              <h6 class="fw-normal">amusia@vp.pl</h6>
+            </div>
+          </div>
+        </div>
+
       </section>
     <!-- Optional JavaScript; choose one of the two! -->
 
