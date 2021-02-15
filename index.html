@@ -51,11 +51,21 @@
       </nav>
       <!-- Home Page -->
       <section id="home" class="bg-white">
-        <div class="container-fluid" style="margin-top: 60px; height: 100vh;">
+        <div class="container-fluid" style="margin-top: 50px; height: 100vh;">
           <div class="row">
-            <div class="col-lg-6 order-lg-last">
-              <div class="d-flex align-items-center d-flex justify-content-center m-3">
-                <img src="./images/brain-2750415_1280.png" class="img-fluid" alt="brain">
+            <div class="col-lg-6 order-lg-last d-flex align-items-center d-flex justify-content-center">
+              <div>
+                <img src="./images/brain-2750415_1280.png" class="img-fluid" alt="brain" id="brain"
+                style="@include media-breakpoint-up(sm) {
+                  @media screen and ( max-width: 1024px ) {
+                  img.responsive { width: 200px; }
+                  }
+                  @media screen and ( min-width: 1025px) {
+                  img.responsive { width: 300px;}
+                  }
+                  img.responsive { height: auto; }
+                  }
+                }">
               </div>
             </div>
             <div class="col-lg-6 order-lg-first d-flex align-items-end d-flex justify-content-start">
@@ -71,9 +81,12 @@
       <section id="aboutMe" class="bg-dark">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 order-lg-last text-light" style="height: 90vh;">
-              <div>
-                <i class="fab fa-connectdevelop fa-10x"></i>
+            <div class="col-lg-6 order-lg-last text-light d-flex align-items-center d-flex justify-content-center" style="height: 90vh;">
+              <div class="">
+                <video width="320" height="320" autoplay loop>
+                  <source src="./images/CoinToss.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
               </div>
             </div>
             <div class="col-lg-6 order-lg-first mb-5 d-flex align-items-end">
@@ -85,7 +98,7 @@
       </section>
       <!-- Skills -->
       <section id="skills" class="bg-white">
-        <div class="container-fluid mt-5 pt-5">
+        <div class="container-fluid pt-5">
             <div class="row mb-5">
               <div class="col text-center">
                 <h1 class="display-1">Skills</h1>
@@ -93,24 +106,24 @@
               </div>
             </div>
           <div class="row mb-5">
-            <div class="col-lg-4 mt-3 mb-5 d-flex align-items-center d-flex justify-content-center">
+            <div class="col-lg-4  mb-3 d-flex align-items-center d-flex justify-content-center">
             <img src="./images/html5-logo-png-transparent.png" class="img-fluid" alt="HTML logo">
             </div>
-            <div class="col-lg-4 mt-3 mb-5 d-flex align-items-center d-flex justify-content-center">
+            <div class="col-lg-4  mb-3 d-flex align-items-center d-flex justify-content-center">
               <img src="./images/css3-logo-png-transparent.png" class="img-fluid" alt="CSS logo">
             </div>
-            <div class=" col-lg-4 mt-3 mb-5 d-flex align-items-center d-flex justify-content-center">
+            <div class=" col-lg-4  mb-3 d-flex align-items-center d-flex justify-content-center">
               <img src="./images/javascript-logo-png-transparent.png" class="img-fluid" alt="JavaScript logo">
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-4 mt-3 mb-5 d-flex align-items-center d-flex justify-content-center">
+            <div class="col-lg-4 mb-3 d-flex align-items-center d-flex justify-content-center">
               <img src="./images/bootstrap-img.png" class="img-fluid" alt="bootstrap logo">
             </div>
-            <div class="col-lg-4 mt-3 mb-5 d-flex align-items-center d-flex justify-content-center">
+            <div class="col-lg-4  mb-3 d-flex align-items-center d-flex justify-content-center">
               <img src="./images/GitHub-Mark-120px-plus.png" class="img-fluid" alt="GitHub logo">
             </div>
-            <div class="col-lg-4 mt-3 mb-5 d-flex align-items-center d-flex justify-content-center">
+            <div class="col-lg-4  mb-3 d-flex align-items-center d-flex justify-content-center">
               <img src="./images/figma-1-logo-png-transparent.png" class="img-fluid" alt="Figma logo">
             </div>
           </div>
