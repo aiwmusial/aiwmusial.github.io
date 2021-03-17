@@ -1,4 +1,4 @@
-//validating form input - name
+//validating form input: name
 function nameCheck(){
     let fieldInput = document.getElementById("from_name").value;
     if(fieldInput.length>=2){
@@ -7,7 +7,7 @@ function nameCheck(){
         document.getElementById('name_validator').innerHTML = 'We accept name input of at least two characters!';
     }
 }
-//validating form input - email
+//validating form input: email
 function emailCheck(){
     let fieldInput = document.getElementById("from_email").value;
     if(fieldInput.includes('@')){
