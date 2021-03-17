@@ -138,14 +138,20 @@
         <div class="container-fluidtext-dark">
           <div class="row">
             <div class="col font-monospace fw-bolder" id="reachOutText">
-              <h1 class="fw-bold lh-1">reach out </h1>
-              <h1 class="fw-bold lh-1">to me...</h1>
+              <h1 class="fw-bold lh-1 ps-4">reach out </h1>
+              <h1 class="fw-bold lh-1 ps-4">to me...</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <h6 class="display-6">e-mail me at:</h6>
-              <h6 class="display-6">aiwmusial@gmail.com</h6>
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-6 mt-2">
+              <h6 class="display-6 ps-4">e-mail me at:</h6>
+              <h6 class="display-6 ps-4">aiwmusial@gmail.com</h6>
+            </div>
+            <!-- Modal btn -->
+            <div class="col-md-6 mt-2 d-flex justify-content-end">
+              <button type="button" class="btn btn-outline-dark btn-md p-3 mb-3 ms-auto me-1 me-md-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <span class=" display-6">or fill in the contact form</span> 
+              </button>
             </div>
           </div>
         </div>
@@ -166,6 +172,53 @@
           </div>
         </div>
       </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-light">
+        <h5 class="modal-title" id="staticBackdropLabel">contact me:</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light text-dark">
+        <!-- JS script for the email form -->
+        <script src="./scripts/script.js"></script>
+        <!-- emailjs.com links -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                  emailjs.init("user_PKtVYDfIjXVN02wwFBCXU");
+            })();
+        </script>
+        <!-- form body -->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="email" class="form-control" id="from_name" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="from_email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="body" id="message" class="form-label mb-3">Message</label>
+            <textarea class="form-control" id="body" name="editor1"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close the window</button>
+        <button type="button" class="btn btn-dark" onclick="sendMail()">Send the message</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- text editor -->
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+     <script>
+       CKEDITOR.replace( 'editor1' );
+ </script>
      <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
