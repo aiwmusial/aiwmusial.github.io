@@ -178,7 +178,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-dark text-light">
-        <h5 class="modal-title" id="staticBackdropLabel">contact me:</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">contact me <i class="fas fa-envelope-open-text"></i></h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body bg-light text-dark">
@@ -195,11 +195,13 @@
         <form>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="email" class="form-control" id="from_name" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="from_name" aria-describedby="emailHelp" required onblur="nameCheck()">
+            <p id="name_validator"></p>
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="from_email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="from_email" aria-describedby="emailHelp" required onblur="emailCheck()">
+            <p id="email_validator"></p>
           </div>
           <div class="mb-3">
             <label for="body" id="message" class="form-label mb-3">Message</label>
@@ -208,7 +210,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close the window</button>
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Abort and close</button>
         <button type="button" class="btn btn-dark" onclick="sendMail()">Send the message</button>
       </div>
     </div>
