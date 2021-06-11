@@ -1,5 +1,5 @@
 <h1>My portfolio website</h1>
-<h2>aiwmusial@github.io</h2>
+<h2>aiwmusial.github.io</h2>
 <p>
 The portfolio website was created to showcase my abilities, as well as to face and overcome obstacles that appear when creating a website.
 </p>
