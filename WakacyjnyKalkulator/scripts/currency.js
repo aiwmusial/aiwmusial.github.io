@@ -106,7 +106,7 @@ function currencyExchange(id){
     async function getCurrencies(){
     // //loading API with the currency exchange rates 
     let codLowerCase = currencyISOcode.toLowerCase();
-        fetch(`http://api.nbp.pl/api/exchangerates/rates/${tabela}/${codLowerCase}/`).then(res => res.json()).then(data =>{
+        fetch(`https://api.nbp.pl/api/exchangerates/rates/${tabela}/${codLowerCase}/`).then(res => res.json()).then(data =>{
             dailyRate = data.rates[0].mid;
             // console.log(data);
             console.log(data.rates[0].effectiveDate);
