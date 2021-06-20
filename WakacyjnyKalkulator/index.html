@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anna Musiał">
+    <!-- favicon -->
+    <link rel="title icon" href="./img/coconut-palm-312154_640.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Font Awsome library link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Wakacyjny Kalkulator</title>
+  </head>
+  <body>
+    <section id="mainPage" style="min-height: 100vh;">
+<div class="container-fluid pb-1" id="homePage">
+    <div class="row">
+        <!-- map load -->
+        <h1 class="display-5 text-center mt-1 mb-1"><span>WAKACYJNY KALKULATOR</span><img class="ms-2" id="pinapple" src="./img/cartoon-4764726_640.png" alt="pinapple"></h1>
+        <div class="col-lg-6  d-flex align-items-center">
+            <div class="mx-auto mapContainer img-fluid" style="width: 28rem;">
+<!-- CSSMap - South America -->
+                <div id="map-south-america">
+                    <ul class="south-america">
+                    <li class="sam1"  id="argentina" onmousedown="currencyExchange(this.id)"><a href="#argentina">Argentyna</a></li>
+                    <li class="sam2"  id="bolivia" onmousedown="currencyExchange(this.id)"><a href="#bolivia">Boliwia</a></li>
+                    <li class="sam3"  id="brazil" onmousedown="currencyExchange(this.id)"><a href="#brazil">Brazylia</a></li>
+                    <li class="sam4"  id="chile" onmousedown="currencyExchange(this.id)"><a href="#chile">Chile</a></li>
+                    <li class="sam5"  id="colombia" onmousedown="currencyExchange(this.id)"><a href="#colombia">Kolumbia</a></li>
+                    <li class="sam6"  id="ecuador" onmousedown="currencyExchange(this.id)"><a href="#ecuador">Ekwador</a></li>
+                    <li class="sam7"  id="guyana" onmousedown="currencyExchange(this.id)"><a href="#guyana">Gujana</a></li>
+                    <li class="sam8"  id="french-guiana" onmousedown="currencyExchange(this.id)"><a href="#french-guiana">Gujana <small>(Gujana Francuska)</small></a></li>
+                    <li class="sam9"  id="paraguay" onmousedown="currencyExchange(this.id)"><a href="#paraguay">Paragway</a></li>
+                    <li class="sam10"  id="peru" onmousedown="currencyExchange(this.id)"><a href="#peru">Peru</a></li>
+                    <li class="sam11"  id="suriname" onmousedown="currencyExchange(this.id)"><a href="#suriname">Surinam</a></li>
+                    <li class="sam12"  id="uruguay" onmousedown="currencyExchange(this.id)"><a href="#uruguay">Urugway</a></li>
+                    <li class="sam13"  id="venezuela" onmousedown="currencyExchange(this.id)"><a href="#venezuela">Wenezuela</a></li>
+                    <li class="sam14"  id="falkland-islands" onmousedown="currencyExchange(this.id)"><a href="#falkland-islands">Falklandy <small>(Malwiny)</small></a></li>
+                    </ul>
+                </div>
+<!-- END OF THE CSSMap - South America -->
+            </div>
+        </div>
+<!-- descriptions -->
+        <div class="col-lg-6">
+<!-- country info -->
+            <div class="mx-auto col-lg-12 text-center mt-2 p-2">
+                <div class="countryDisplay mx-auto">
+                    <h2 id="country">Zaznacz na mapie kraj, który chcesz odwiedzić</h2>
+                    <h3 id="currency"> i sprawdź...</h3>
+                    <h3 id="rate">...czy twoje marzenia są w zasięgu ręki!</h3>
+                </div>
+            </div>
+<!-- Average travel cost per day -->
+            <div class="mx-auto my-3 col-lg-12">
+                <table class="text-center">
+                    <tr>
+                        <th colspan="4">Jaki jest średni dzienny koszt podróży?</th>
+                    </tr>
+                    <tr>
+                        <td class="p-2 tdDescr">Oszczędnie poznajesz świat</td>
+                        <td class="p-2 tdDescr">Szukasz małych przyjemności</td>
+                        <td class="p-2 tdDescr">...i troszkę większych</td>
+                        <td class="p-2 tdDescr">Koszty to nie problem</td>
+                    </tr>
+                    <tr>
+                        <td class="currencyUsed tdDescr"></td>
+                        <td class="currencyUsed tdDescr"></td>
+                        <td class="currencyUsed tdDescr"></td>
+                        <td class="currencyUsed tdDescr"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="bgCost m-2" for="tripCostBudget" id="budgetTrip">$ <br>
+                            </p>
+                        </td>
+                        <td>
+                            <p class="bgCost m-2" for="tripCostMedLow" id="midLowTrip">$$ <br>
+                            </p>
+                        </td>
+                        <td>
+                            <p class="bgCost m-2" for="tripCostMedHigh" id="midHighTrip">$$$ <br>
+                            </p>
+                        </td>
+                        <td>
+                            <p class="bgCost m-2" for="tripCostHighEnd" id="topEndTrip">$$$$ <br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+<!-- Your trip assumptions -->
+<!-- length of stay -->
+            <div class="mx-5 my-2 elementContainer text-center">
+                <label for="tripLength" class="form-label">Wybierz długość wakacji</label>
+                <input type="range" class="form-range mx-3" min="1" max="30" value="14" step="1" id="tripLengthInput" oninput="this.nextElementSibling.value = this.value" onchange="tripEstimator(this.value)" style="width: 100%;">
+                <output id="tripLengthFind">14</output>
+                <br>
+                <!-- <button id="tripLengthFind" type="button" class="btn btn-warning text-dark">Potwierdź wybraną ilość dni</button> -->
+            </div>
+                <div id="costEstimate" class="my-1">
+
+                </div>
+        </div>
+    </div>
+</div>
+    </section>
+    
+    <!-- <script type="text/javascript" src="./scripts/averageTripCosts.js"></script> -->
+    <script type="text/javascript" src="./scripts/currency.js"></script>
+    
+    <!-- setting up an external CSS map -->
+
+    <!-- CSSMap STYLESHEET - SOUTH AMERICA -->
+    <!-- CSSMap plugin by Łukasz Popardowski -->
+    <link rel="stylesheet" type="text/css" href="./cssmap-south-america/cssmap-south-america/cssmap-south-america.css" media="screen" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSSMap SCRIPT -->
+    <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        
+        // CSSMap;
+        $("#map-south-america").CSSMap({
+          "size": 540,
+          "tooltips": "floating-top-center",
+          "responsive": "auto"
+        });
+        // END OF THE CSSMap;
+        
+        });
+        </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+</html>
