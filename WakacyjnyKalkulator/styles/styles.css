@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+#mainPage{
+    background-image: linear-gradient(#0e0f4e, #668cf5);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* heading */
+#pinapple{
+    height: 150px;
+}
+h1 span{
+    color: #3cc43c;
+    font-family: 'Bangers';
+    text-shadow: 2px 2px #0a0a08;
+}
+/* country info */
+h2{
+    font-weight: bold;
+    color: #ECA824;
+    text-shadow: 1px 1px #0a0a08;
+}
+h3{
+    font-weight: bold;
+    color: #eaebf8;
+    text-shadow: 1px 1px #0a0a08;
+}
+
+/* avg cost detailed */
+th{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ECA824;
+    text-shadow: 1px 1px #2a2c2c; 
+}
+.tdDescr{
+    color: #eaebf8;
+    text-shadow: 1px 1px #0a0a08;
+}
+
+td p{
+    background-color: #379637;
+    box-shadow: 2px 2px #1b1b16;
+    color: #e5e6f1;
+    text-shadow: 1px 1px #060CC0;
+    font-weight: bold;
+}
+.form-label, #tripLengthFind{
+    color: #ECA824;
+    text-shadow: 1px 1px #2a2c2c; 
+    font-size: 1.1em;
+    font-weight: bold;
+}
+/* slider thumbnail styling */
+#tripLengthInput::-webkit-slider-thumb{
+    background-color: #379637;
+}
+
+/* analysis results JS innerHTML */
+ul{
+    list-style: none;
+}
+li{
+    background-color: #379637;
+    box-shadow: 2px 2px #0a0a08;
+    color: #e5e6f1;
+    text-shadow: 1px 1px #060CC0; 
+}
+.priceTrip{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fac801;
+    text-shadow: 1px 1px #2a2c2c;
+}
+.checkBeforeYouGo{
+    background-color: #c42444;
+    box-shadow: 2px 2px #0a0a08;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #e5e6f1;
+    text-shadow: 1px 1px #2a2c2c;
+}
+a{
+    font-size: 1.1em;
+    color: #e5e6f1;
+    text-shadow: 1px 1px #2a2c2c;
+}
+a:hover{
+    color: #e5e6f1;
+    text-shadow: 1px 1px #060CC0; 
+}
+.disclaimer{
+    color: #e5e6f1;
+    text-shadow: 1px 1px #2a2c2c;
+}
