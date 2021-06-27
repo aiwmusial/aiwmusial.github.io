@@ -55,6 +55,12 @@ td p{
     font-size: 1.1em;
     font-weight: bold;
 }
+/* sm device table display */
+@media (max-width: 576px){
+    table{
+        font-size: 0.7em;
+    }
+}
 /* slider thumbnail styling */
 #tripLengthInput::-webkit-slider-thumb{
     background-color: #379637;
@@ -63,6 +69,7 @@ td p{
 /* analysis results JS innerHTML */
 ul{
     list-style: none;
+    padding: 0;
 }
 li{
     background-color: #379637;

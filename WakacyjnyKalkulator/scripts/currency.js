@@ -106,7 +106,7 @@ function currencyExchange(id){
     async function getCurrencies(){
     // //loading API with the currency exchange rates 
     let codLowerCase = currencyISOcode.toLowerCase();
-        fetch(`http://api.nbp.pl/api/exchangerates/rates/${tabela}/${codLowerCase}/`).then(res => res.json()).then(data =>{
+        fetch(`https://api.nbp.pl/api/exchangerates/rates/${tabela}/${codLowerCase}/`).then(res => res.json()).then(data =>{
             dailyRate = data.rates[0].mid;
             // console.log(data);
             console.log(data.rates[0].effectiveDate);
@@ -142,10 +142,10 @@ function tripEstimator(slider){
                                                             Jeśli pojedziesz na ${slider} dni, to za cały pobyt zapłacisz:
                                                         </p>
                                                             <ul class="mx-auto">
-                                                                <li class="m-3 text-center p-2"><span class="priceTrip">${budgetTripEstmBudget.toFixed()}zł</span> <br> jeśli podróżujesz z plecakiem i nie straszne ci hostele, a na wycieczki wybierasz się transportem publicznym</li>
-                                                                <li class="m-3 text-center p-2"><span class="priceTrip">${budgetTripEstmMidLow.toFixed()}zł</span> <br> możesz pozwolić sobie na noclegi w pensionatach i posiłki w małych restauracyjkach, przemieszczasz się transportem publicznym</li>
-                                                                <li class="m-3 text-center p-2"><span class="priceTrip">${budgetTripEstmMidHigh.toFixed()}zł</span> <br> oprócz noclegów w mniejszych hotelach, od czasu do czasu możesz wynająć samochód na dłuższe wycieczki</li>
-                                                                <li class="m-3 text-center p-2"><span class="priceTrip">${budgetTripEstmTopEnd.toFixed()}zł</span> <br> stołujesz się w fajnych restauracjach, możesz sobie pozwolić na noclegi w ekscluzywnych hotelach</li>
+                                                                <li class="my-3 mx-auto text-center p-2"><span class="priceTrip">${budgetTripEstmBudget.toFixed()}zł</span> <br> jeśli podróżujesz z plecakiem i nie straszne ci hostele, a na wycieczki wybierasz się transportem publicznym</li>
+                                                                <li class="my-3 mx-auto text-center p-2"><span class="priceTrip">${budgetTripEstmMidLow.toFixed()}zł</span> <br> możesz pozwolić sobie na noclegi w pensionatach i posiłki w małych restauracyjkach, przemieszczasz się transportem publicznym</li>
+                                                                <li class="my-3 mx-auto text-center p-2"><span class="priceTrip">${budgetTripEstmMidHigh.toFixed()}zł</span> <br> oprócz noclegów w mniejszych hotelach, od czasu do czasu możesz wynająć samochód na dłuższe wycieczki</li>
+                                                                <li class="my-3 mx-auto text-center p-2"><span class="priceTrip">${budgetTripEstmTopEnd.toFixed()}zł</span> <br> stołujesz się w fajnych restauracjach, możesz sobie pozwolić na noclegi w ekscluzywnych hotelach</li>
                                                             </ul>
                                                             <p class="my-3 p-2 text-center checkBeforeYouGo col-8 mx-auto">
                                                                 Przygotuj się do swojej podróży i sprawdź <a href="https://www.gov.pl/web/dyplomacja/informacje-dla-podrozujacych" target="_blank">informacje dla podróżujących przygotowane przez MSZ.</a><br>
@@ -179,5 +179,5 @@ avgCost=[
     {index:"suriname", country:'Surinam', currency: 'Dolar surinamski (SRD)', code:'SRD', budgetTrip:'249', midLowTrip:'250', midHighTrip:'599', topEndTrip:'600'}, 
     {index:"uruguay", country:'Urugwaj', currency: 'Peso urugwajskie (UYU)', code:'USD', budgetTrip:'74', midLowTrip:'75', midHighTrip:'174', topEndTrip:'175'}, 
     {index:"venezuela", country:'Wenezuela', currency: 'Boliwar (VES)', code:'USD', budgetTrip:'7', midLowTrip:'', midHighTrip:'', topEndTrip:''}, 
-    {index:"falkland-islands", country:'Falklandy Malwiny', currency: 'Funt falklandzki (FKP)', code:'GBP', budgetTrip:'no data available', midLowTrip:'no data available', midHighTrip:'no data available', topEndTrip:'no data available'} 
+    {index:"falkland-islands", country:'Falklandy Malwiny', currency: 'Funt falklandzki (FKP)', code:'GBP', budgetTrip:'brak danych', midLowTrip:'brak danych', midHighTrip:'brak danych', topEndTrip:'brak danych'} 
 ]
