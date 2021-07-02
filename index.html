@@ -24,7 +24,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#home"><i class="fab fa-fly text-dark fa-2x"></i></a>
           <button class="bg-white navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-align-center"></i>
+            <!-- <span class="navbar-toggler-icon"></span> --><i class="fas fa-align-center"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="mb-2 navbar-nav me-auto mb-lg-0">
@@ -198,25 +198,25 @@
         <!-- form body -->
         <form>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <label for="exampleInputEmail1" class="form-label">Name*</label>
             <input type="email" class="form-control" id="from_name" aria-describedby="emailHelp" required onblur="nameCheck()">
             <p id="name_validator"></p>
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <label for="exampleInputEmail1" class="form-label">Email address*</label>
             <input type="email" class="form-control" id="from_email" aria-describedby="emailHelp" required onblur="emailCheck()">
             <p id="email_validator"></p>
           </div>
           <div class="mb-3">
-            <label for="body" id="message" class="mb-3 form-label">Message</label>
-            <textarea class="form-control" id="body" name="editor1"></textarea>
+            <label for="body" id="message" class="mb-3 form-label">Message*</label>
+            <textarea class="form-control" id="body" name="editor1" required></textarea>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Abort and close</button>
-        <button type="button" class="btn btn-dark" onclick="sendMail()">Send the message</button>
-      </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Abort and close</button>
+          <button type="button" class="btn btn-dark" onclick="sendMail()">Send the message</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
