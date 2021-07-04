@@ -24,10 +24,11 @@ function sendMail(params){
         to_name: 'Anna',
         from_name: document.getElementById("from_name").value,
         from_email: document.getElementById("from_email").value,
-        message: document.getElementById("body").value,
+        message: document.getElementById("msg_body").value
     };
     emailjs.send('service_w329smh','template_tbg4p7f', messageBody)
     .then(function(res){
         console.log('sucsess',res.status);
     })
+    
 }
