@@ -209,12 +209,13 @@
           </div>
           <div class="mb-3">
             <label for="msg_body" class="mb-3 form-label">Message*</label>
-            <textarea rows="7" class="form-control" id="msg_body" required></textarea>
+            <textarea rows="7" class="form-control" id="msg_body" required onblur="messageCheck()"></textarea>
+            <p id="msg_validator"></p>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Abort and close</button>
-          <button type="submit" class="btn btn-dark" onclick="sendMail()" data-bs-dismiss="modal">Send the message</button>
+          <button type="button" class="btn btn-dark" onclick="sendMail()" data-bs-dismiss="modal">Send the message</button>
         </div>
         </form>
     </div>
