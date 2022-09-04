@@ -16,7 +16,7 @@ body{
 }
 /* Projects section is to take the entire screen */
 #projectsRow{
-    height: 100vh;
+    min-height: 100vh;
 }
 /* Setting out the text size, Contact section */
 #contact h1{
