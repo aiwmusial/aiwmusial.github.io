@@ -22,3 +22,11 @@ body{
 #contact h1{
     font-size: 18vw;
 }
+
+.card {
+    width: 12rem;
+}
+.card-header {
+    font-weight: 700;
+    height: 7ex;
+}
