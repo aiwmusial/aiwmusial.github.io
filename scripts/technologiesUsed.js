@@ -60,13 +60,10 @@ let technologies = [
         "alt": "Figma logo"
     }
 ];
-// (function(){
 
     let skillsAndTechnologies = document.getElementsByClassName("skills-and-technologies");
     let skillSetToBeAppended = [];
-    // let skillsCard;
-    // console.log(skillsAndTechnologies[0]);
-    console.log(technologies.length);
+
     for (let i = 0; i < technologies.length; i++){
         
         let div = document.createElement("div");
@@ -74,7 +71,6 @@ let technologies = [
         let cardHeader = document.createElement("div");
         let cardImage = document.createElement("img");
 
-        // card.className = "card";
         div.classList.add("mb-3", "col-lg-2", "col-6", "d-flex", "align-items-center", "justify-content-center")
         card.className = "card";
         cardHeader.classList.add("card-header", "text-center", "align-middle");
@@ -88,40 +84,5 @@ let technologies = [
         cardImage.setAttribute("src",`${technologies[i].source}`);
         cardImage.setAttribute("alt",`${technologies[i].alt}`);
         
-
-
-
-
-        // cardHeader.innerHTML = `${technologies[i].description}`;
-        // document.body.appendChild(cardHeader)
-        // var div = document.createElement("div");
-        // div.className = "finalBlock";
-        // div.innerHTML = technologies[i].description;
-                // let skillsCard =   `<div class="card mb-3 col-lg-4 col-6 d-flex align-items-center justify-content-center">
-                //             <div class="card-header">${technologies[i].description}</div>
-                //             <img src="${technologies[i].source}" class="img-fluid" alt="${technologies[i].alt}">
-                //         </div>`;
-        // document.body.appendChild(div);
-        // skillsAndTechnologies[0].innerHTML = skillsCard;
-        // skillsAndTechnologies[0].appendChild(skillsCard);
         skillsAndTechnologies[0].appendChild(div);
     }
-//     var text = ["text1", "tex2", "text3", "text4"];
-// for(var i = 0; i < text.length; i += 1) {
-//     var div = document.createElement("div");
-//     div.className = "finalBlock";
-//     div.innerHTML = text[i];
-//     document.body.appendChild(div);
-// }
-        // console.log(technologies[i].description)
-        // let skillsCard =   `<div class="card" style="width: 18rem;">
-        //                     <div class="card-header">${technologies[i].description}</div>
-        //                     <img src="${technologies[i].source}" class="card-img-top" alt="${technologies[i].alt}">
-        //                 </div>`;
-        // skillsAndTechnologies.appendChild(skillsCard);
-        // console.log(skillsAndTechnologies);
-        // skillSetToBeAppended.push(skillsCard)                    
-// })();
-// skillSetToBeAppended.join(",");
-// skillsAndTechnologies.innerHTML = skillSetToBeAppended.join(",");
-// console.log(skillSetToBeAppended)
