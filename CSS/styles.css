@@ -30,3 +30,45 @@ body{
     font-weight: 700;
     height: 7ex;
 }
+
+#dot1 {
+    color: #f8f9fa;
+    animation-name: reachOutDot1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#dot2 {
+    color: #f8f9fa;
+    animation-name: reachOutDot2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#dot3 {
+    color: #f8f9fa;
+    animation-name: reachOutDot3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes reachOutDot1 {
+    0% {color: #f8f9fa;}
+    24% {color: #f8f9fa;}
+    25% {color: #212529;}
+    100% {color: #212529;}
+  }
+  
+@keyframes reachOutDot2 {
+    0% {color: #f8f9fa;}
+    39% {color: #f8f9fa;}
+    40% {color: #212529;}
+    100% {color: #212529;}
+  }
+
+@keyframes reachOutDot3 {
+    0% {color: #f8f9fa;}
+    49% {color: #f8f9fa;}
+    75% {color: #212529;}
+    100% {color: #212529;}
+  }
