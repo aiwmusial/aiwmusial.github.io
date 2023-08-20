@@ -72,3 +72,9 @@ body{
     75% {color: #212529;}
     100% {color: #212529;}
   }
+  .skills-and-technologies .card{
+    border: none;
+  }
+  .skills-and-technologies .card-header{
+    background-color: #fff;
+  }
