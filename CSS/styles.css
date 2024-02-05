@@ -14,10 +14,7 @@ body{
 #aboutMeVideo{
     min-height: 90vh;
 }
-/* Projects section is to take the entire screen */
-#projectsRow{
-    min-height: 100vh;
-}
+
 /* Setting out the text size, Contact section */
 #contact h1{
     font-size: 18vw;
