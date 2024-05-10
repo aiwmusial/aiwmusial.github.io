@@ -1,4 +1,3 @@
-// import { technologies } from "./technologies.js"
 const app = Vue.createApp({
     data() {
         return {
