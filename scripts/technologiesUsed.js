@@ -18,7 +18,7 @@ const app = Vue.createApp({
                             {{ tech.description }}
                         </div>
                         <img 
-                            class="img-fluid p-2" 
+                            class="img-fluid p-2 ms-auto me-auto" 
                             :src="tech.source" 
                             :alt="tech.alt"
                         >
