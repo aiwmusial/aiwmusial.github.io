@@ -1,8 +1,16 @@
 const projects = [
     {
+        "id": "weatherForecastApp",
+        "source": "./images/projectSnaps/weatherForecastApp.png",
+        "alt": "Weather forecast for Melbourne, AU",
+        "title": "Weather Forecast App",
+        "description": "This Vue.js3 app allows users to get the weather forecast for a selected town. The user types the name of the town and narrows down the selection by clicking on one of the suggestions in the dropdown list. An API call is then made to Open Weather's Geocoding API to obtain the coordinates (latitude and longitude) of the chosen location. These coordinates are essential for querying the weather forecast from Open-Meteo. The results of the API call are displayed both in a chart (using Apache ECharts) and presented as a list.",
+        "projectLink": "https://findweatherforecastforchosenlocation.netlify.app/"
+    },
+    {
         "id": "swotAnalysisApp",
         "source": "./images/projectSnaps/swotAnalysisSnap.png",
-        "alt": "colourful SWOT matrix",
+        "alt": "Colourful SWOT matrix",
         "title": "SWOT Analysis App",
         "description": "A Vue.js 3 Single File Component (SFC) project that enables self-reflection by allowing you to record your qualities and external factors influencing your progress in local storage, aiding your personal growth.",
         "projectLink": "https://swot-analysis-app.netlify.app/"
