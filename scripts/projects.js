@@ -4,8 +4,16 @@ const projects = [
         "source": "./images/projectSnaps/weatherForecastApp.png",
         "alt": "Weather forecast for Melbourne, AU",
         "title": "Weather Forecast App",
-        "description": "This Vue.js 3 app provides weather forecasts for a selected town. Users type the town name and select from dropdown suggestions. An API call to Open Weather's Geocoding API retrieves coordinates for querying the weather forecast from Open-Meteo. Results are shown in a chart and list.",
+        "description": "This Vue.js 3 app provides weather forecasts for a selected town. Users type the town name and select from dropdown suggestions. An API call to Open Weather's Geocoding API retrieves the coordinates, which are then used to query the weather forecast from Open-Meteo. Results are displayed in a chart (using Apache ECharts) and as a list.",
         "projectLink": "https://findweatherforecastforchosenlocation.netlify.app/"
+    },
+    {
+        "id": "inputFormApp",
+        "source": "./images/projectSnaps/inputFormApp.png",
+        "alt": "List of tasks",
+        "title": "Input Form App",
+        "description": "This app lets users add 10 text inputs showing vowel counts (a, e, i, o, u). 'Search' highlights matching fields and itself. Each field has a 'trash' icon for removal. Developed with TypeScript (TS), Pinia, and Vue.js 3 for functionality.",
+        "projectLink": "https://github.com/aiwmusial/formVue3"
     },
     {
         "id": "swotAnalysisApp",
