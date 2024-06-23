@@ -4,7 +4,7 @@ const projects = [
         "source": "./images/projectSnaps/weatherForecastApp.png",
         "alt": "Weather forecast for Melbourne, AU",
         "title": "Weather Forecast App",
-        "description": "This Vue.js3 app allows users to get the weather forecast for a selected town. The user types the name of the town and narrows down the selection by clicking on one of the suggestions in the dropdown list. An API call is then made to Open Weather's Geocoding API to obtain the coordinates (latitude and longitude) of the chosen location. These coordinates are essential for querying the weather forecast from Open-Meteo. The results of the API call are displayed both in a chart (using Apache ECharts) and presented as a list.",
+        "description": "This Vue.js 3 app provides weather forecasts for a selected town. Users type the town name and select from dropdown suggestions. An API call to Open Weather's Geocoding API retrieves coordinates for querying the weather forecast from Open-Meteo. Results are shown in a chart and list.",
         "projectLink": "https://findweatherforecastforchosenlocation.netlify.app/"
     },
     {
